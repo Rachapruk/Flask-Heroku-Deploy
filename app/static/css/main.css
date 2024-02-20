@@ -1,0 +1,54 @@
+@font-face {
+  font-family: baloo;
+  src: url('/static/fonts/Baloo2-SemiBold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #ae1919;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.pos {
+  display: block;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Style the footer */
+.footer {
+  position: static;
+  overflow: hidden;
+  background-color: #fefefe;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  bottom: 0;
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body class="all">
+        {% extends "layout.html" %}
+        {% block content %}
+    <div class="vid" style="margin-left: 90px; position: absolute;">
+        <img src="{{ url_for('curl_cam')}}">
+    </div>
+    {% endblock %}
+    </body>
+</html>

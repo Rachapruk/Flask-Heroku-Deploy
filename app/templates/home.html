@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> 
+    
+    <body>
+        {% extends "layout.html" %}
+        {% block content %}
+
+        <div class="welcome" style="color: white;">
+         <h1 style="font-size: 65px;
+         text-align: center;
+         font-weight: 800;
+         font-family: baloo;">Welcome to SWUFit</h1>   
+        </div>
+        
+        <div class="getStarted">
+            <a  href="/selection" style="position: static;
+            margin-left: 700px;
+            margin-top: 500px; color: white;">Let's Exercise!</a>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementsById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+          </script>
+        {% endblock %}
+
+    </body>
+</html>

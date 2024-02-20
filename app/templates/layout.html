@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="navbar">
+  <div class = "Pic">
+    <img 
+    src="{{url_for('static', filename = 'images/Logo.png')}}" class="pos" 
+    style="
+      width: 100px;
+      height: 100px;">
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementsById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+<div class="content">
+  
+  {% block content %}
+  {% endblock %}
+  
+</div>
+
+<div class="footer">
+</div>
+
+</body>
+</html>
