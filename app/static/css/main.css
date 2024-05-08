@@ -16,7 +16,7 @@ body {
 #navbar {
   display: flex;
   overflow: hidden;
-  background-color:  rgba(218, 33, 40, 1);
+  background-color: rgba(218, 33, 40, 1);
   align-items: center;
   justify-content: space-between;
   height: 109px;
@@ -28,7 +28,7 @@ body {
   margin-right: 65px;
 }
 
-.navbar_text h1 a{
+.navbar_text h1 a {
   color: rgba(255, 255, 255, 1);
   ;
   font-family: inriaSans;
@@ -70,7 +70,7 @@ body {
   font-weight: 700;
   font-size: 128px;
   font-family: inriaSans;
-  text-shadow: 0 8px 4px rgba(0,0,0,0.25);
+  text-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hometext2 {
@@ -79,7 +79,7 @@ body {
   font-weight: 700;
   font-size: 64px;
   font-family: inriaSans;
-  text-shadow: 0 8px 4px rgba(0,0,0,0.25);
+  text-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hometext3 {
@@ -143,7 +143,7 @@ body {
 }
 
 .hometext4 a:hover #h4img1 {
-  transform: rotate(25deg) ;
+  transform: rotate(25deg);
 }
 
 .hometext4 a:hover #h4img2 {
@@ -332,14 +332,14 @@ body {
 
 .ContactUs_Mail:hover img,
 .ContactUs_Facebook:hover img,
-.ContactUs_Line:hover img{
-transform: scale(1.3);
+.ContactUs_Line:hover img {
+  transform: scale(1.3);
 }
 
 .ContactUs_Mail a,
 .ContactUs_Facebook a,
-.ContactUs_Line a{
-text-decoration: none;
+.ContactUs_Line a {
+  text-decoration: none;
 }
 
 .guideButton img:hover {
@@ -395,7 +395,7 @@ text-decoration: none;
 
 .popup.active .guideContent {
   transition: all 300ms ease-in-out;
-  transform: translate(0%,0%) scale(1);
+  transform: translate(0%, 0%) scale(1);
 }
 
 #nextGIF:hover {
@@ -460,25 +460,13 @@ text-decoration: none;
   justify-content: center;
 }
 
-
-
-
-
-
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky + .content {
+.sticky+.content {
   padding-top: 60px;
 }
 
@@ -525,9 +513,24 @@ text-decoration: none;
   color: white;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
+@media only screen and (max-width: 1280px){
+  #navbar {
+    display: flex;
+    overflow: hidden;
+    background-color:rgba(218, 33, 40, 1);
+    align-items: center;
+    justify-content: space-between;
+    height: 109px;
+  }
 
+  .navbar_text {
+    display: flex;
+    gap: 60px;
+    margin-right: 43px;
+  }
 
+}
