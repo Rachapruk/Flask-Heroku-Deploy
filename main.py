@@ -4,9 +4,6 @@ from flask_debug import Debug
 import mediapipe as mp 
 import os
 import numpy as np
-# from matplotlib import pyplot as plt
-# from sklearn.metrics import accuracy_score, precision_score, recall_score # Accuracy metrics
-# from sklearn.model_selection import train_test_split
 import imutils
 
 app = Flask(__name__)
