@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>SWUFit</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,31 +10,29 @@
 
 <div id="navbar">
   <div class = "Pic">
+    <a href="/">
     <img 
     src="{{url_for('static', filename = 'images/Logo.png')}}" class="pos" 
     style="
-      width: 100px;
-      height: 100px;">
-<script>
-  window.onscroll = function() {myFunction()};
+      width: 123px;
+      height: 123px;"></a>
+  </div>
+  <div class="navbar_text">
+    <h1><a href="/selection">Start</a></h1>
+    <h1><a href="/AboutUs">Contact Us</a></h1>
+  </div>
   
-  var navbar = document.getElementsById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-</script>
+</div>
+<div id="underNavbar">
+  <h1></h1>
+</div>
 <div class="content">
   
   {% block content %}
   {% endblock %}
   
 </div>
+
 
 <div class="footer">
 </div>

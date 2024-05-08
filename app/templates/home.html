@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html> 
-    
-    <body>
-        {% extends "layout.html" %}
-        {% block content %}
+<html>
 
-        <div class="welcome" style="color: white;">
-         <h1 style="font-size: 65px;
-         text-align: center;
-         font-weight: 800;
-         font-family: baloo;">Welcome to SWUFit</h1>   
-        </div>
-        
-        <div class="getStarted">
-            <a  href="/selection" style="position: static;
-            margin-left: 700px;
-            margin-top: 500px; color: white;">Let's Exercise!</a>
-        </div>
-        <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementsById("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-          </script>
-        {% endblock %}
+<body>
+  {% extends "layout.html" %}
+  {% block content %}
+  <div class="home">
+    <div class="hometext1">SWUFit</div>
+    <div class="hometext2">Your home trainer</div>
+    <div class="hometext3"><a href="/WhatIsSWUFit">
+      What is SWUFit
+      <img src="static/images/arrow.png" alt="arrow"></a>
+    </div>
+    <div class="hometext4"><a href="/selection">
+      <img id="h4img1" src="static/images/muscleR.png" alt="arrow">
+      Let's Begin!
+      <img id="h4img2" src="static/images/muscleL.png" alt="arrow"></a>
+    </div>
+  </div>
+  {% endblock %}
 
-    </body>
+</body>
+
 </html>

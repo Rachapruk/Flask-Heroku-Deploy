@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <script src="static/scripts/Right_Chest_Front_RaiseGuidePopup.js"></script>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="content2">
+        <div class="guideButton">
+            <div onclick="togglePopup()"><img src="static/images/guide.png" alt="guide"></div>
+        </div>
+        <div class="CamTitle"><h1>Chest Front Raise (Right Side)</h1></div>
+        <div class="center">
+            <img src="{{ url_for('RCFR_cam')}}">
+        </div>
+        <div class="center" id="tls">
+            <a href="/Left_Chest_Front_Raise"><button class="button button1">Try left side</button></a>
+        </div>
+        <div class="popup" id="popup-10">
+            <div class="overlay"></div>
+            <div class="guideContent">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <div id="nextGIF" onclick="nextGIF()">&gt;</div>
+                <div><br></div>
+                <div id="backGIF" onclick="backGIF()">&lt;</div>
+                <div class="gifPopup" id="gifPopup-1">
+                    <img id="gif1" src="static/images/1.gif" alt="guide">
+                    <img id="gif2" src="static/images/2.gif" alt="guide">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

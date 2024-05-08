@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="static/scripts/barbellsquatGuidePopup.js"></script>
+
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="content2">
+        <div class="guideButton">
+            <div onclick="togglePopup()"><img src="static/images/guide.png" alt="guide"></div>
+        </div>
+        <div class="CamTitle"><h1>Barbell Squat</h1></div>
+        <div class="center">
+            <img src="{{ url_for('squat_cam')}}">
+        </div>
+        <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="guideContent">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <div id="nextGIF" onclick="nextGIF()">&gt;</div>
+                <div><br></div>
+                <div id="backGIF" onclick="backGIF()">&lt;</div>
+                <div class="gifPopup" id="gifPopup-1">
+                    <img id="gif1" src="static/images/11.gif" alt="guide">
+                    <img id="gif2" src="static/images/12.gif" alt="guide">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>
